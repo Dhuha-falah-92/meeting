@@ -31,8 +31,8 @@ class MemberController extends Controller
             'name' => 'string',
             'date' => 'string',
             'from' => 'string',
-            // 'too' => 'string',
-            'email' => 'string',
+            'too' => 'string',
+            // 'email' => 'string',
         ]);
         Member::create($request->all());
         return redirect()->route('members.index')
@@ -71,8 +71,8 @@ class MemberController extends Controller
             'name' => 'required',
             'date' => 'required',
             'from' => 'required',
-            // 'too' => 'required',
-            'email' => 'required',
+            'too' => 'required',
+            // 'email' => 'required',
         ]);
         $member->update($request->all());
         return redirect()->route('members.index')

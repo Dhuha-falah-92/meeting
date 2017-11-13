@@ -18,8 +18,8 @@ class CreateMembersTable extends Migration
             $table->string('name');
             $table->string('date');
             $table->string('from');
-            // $table->string('too');
-            $table->string('email');
+            $table->string('too');
+            // $table->string('email');
             $table->timestamps();
         });
     }
