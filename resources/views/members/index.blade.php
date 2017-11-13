@@ -6,7 +6,7 @@
                 <h2>Meeting Corrdinator</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-info" href="{{ route('members.create') }}"> Create New Member</a>
+                <a class="btn btn-info" href="{{ route('members.create') }}"> Create New Schdular</a>
             </div>
         </div>
     </div>
