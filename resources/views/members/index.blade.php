@@ -1,9 +1,9 @@
-@extends('members.default')
+@extends('layout')
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Members CRUD</h2>
+                <h2>Meeting Corrdinator</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-info" href="{{ route('members.create') }}"> Create New Member</a>
@@ -25,7 +25,8 @@
             <th>Date</th>
             <th>From</th>
             <th>To</th>
-            <th>Email</th>
+            <th>Add at</th>
+            <th>Updated at</th>
             <th width="280px">Operation</th>
         </tr>
     @foreach ($members as $member)
@@ -35,7 +36,8 @@
         <td>{{ $member->date}}</td>
         <td>{{ $member->from}}</td>
         <td>{{ $member->too}}</td>
-        <td>{{ $member->email}}</td>
+        <td>{{ $member->created_at}}</td>
+        <td>{{ $member->updated_at}}</td>
         <td>
             <a class="btn btn-success" href="{{ route('members.show',$member->id) }}">Show</a>
             <a class="btn btn-info" href="{{ route('members.edit',$member->id) }}">Edit</a>
