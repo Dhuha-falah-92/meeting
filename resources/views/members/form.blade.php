@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
+        {{--  <div class="form-group">
             <strong>Name:</strong>
             {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
-        </div>
+        </div>  --}}
     </div>
  {{--  <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
@@ -14,7 +14,7 @@
 
 
 			<div class="form-group">
-                <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
+                <label for="dtp_input2" class="col-md-2 control-label">Date </label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                     {!! Form::text('date', null, array('placeholder' => 'Date','class' => 'form-control')) !!}
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
@@ -35,7 +35,7 @@
     </div>  --}}
 
     <div class="form-group">
-                <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
+                <label for="dtp_input3" class="col-md-2 control-label">From</label>
                 <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                      {!! Form::text('from', null, array('placeholder' => 'From','class' => 'form-control')) !!}
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
@@ -56,7 +56,7 @@
     </div>  --}}
 
      <div class="form-group">
-                <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
+                <label for="dtp_input3" class="col-md-2 control-label">To</label>
                 <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                    {!! Form::text('too', null, array('placeholder' => 'To','class' => 'form-control')) !!}
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
@@ -65,6 +65,15 @@
 				<input type="hidden" id="dtp_input3" value="" /><br/>
             </div>
 
+
+
+
+
+
+   <div class="form-group">
+            <strong>Involves:</strong>
+            {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+        </div>
 
 
 
