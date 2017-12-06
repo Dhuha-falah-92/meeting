@@ -34,7 +34,7 @@
         </div>
     </div>  --}}
 
-    <div class="form-group">
+            <div class="form-group">
                 <label for="dtp_input3" class="col-md-2 control-label">From</label>
                 <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                      {!! Form::text('from', null, array('placeholder' => 'From','class' => 'form-control')) !!}
@@ -55,7 +55,7 @@
         </div>
     </div>  --}}
 
-     <div class="form-group">
+            <div class="form-group">
                 <label for="dtp_input3" class="col-md-2 control-label">To</label>
                 <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                    {!! Form::text('too', null, array('placeholder' => 'To','class' => 'form-control')) !!}
@@ -70,19 +70,19 @@
 
 
 
-   <div class="form-group">
+        <div class="form-group">
             <strong>Involves:</strong>
             {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
         </div>
 
 
 
-    {{--  <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>Email:</strong>
-            {!! Form::email('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
-        </div>
-    </div>  --}}
+       
+            <div class="form-group">
+                <strong>Email:</strong>
+                {!! Form::email('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
+            </div>
+       
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
     </div>

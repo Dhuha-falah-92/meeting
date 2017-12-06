@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel 5.5 CRUD example</title>
+    <title>Meeting Room Coordinator</title>
     {{--  <link href="{{asset('css/app.css')}}" rel="stylesheet">  --}}
+
+
 
 
 
@@ -38,7 +40,7 @@
         showMeridian: 1
     });
 	$('.form_date').datetimepicker({
-        language:  'fr',
+        language:  'ar',
         weekStart: 1,
         todayBtn:  1,
 		autoclose: 1,
@@ -59,6 +61,8 @@
 		forceParse: 0
     });
 </script>
+
+
 
  
 </body>

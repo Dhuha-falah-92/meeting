@@ -32,9 +32,17 @@ class MemberController extends Controller
             'date' => 'string',
             'from' => 'string',
             'too' => 'string',
-            // 'email' => 'string',
+            'email' => 'string',
         ]);
-        Member::create($request->all());
+        $mod=new Member;
+        $mod->name=$request->input('name');
+        $mod->date=$request->input('date');
+        $mod->from=$request->input('from');
+        $mod->too=$request->input('too');
+        $mod->email=$request->input('email');
+        $mod->save();
+
+        // Member::create($request->all());
         return redirect()->route('members.index')
                         ->with('success','Member created successfully');
     }
@@ -72,8 +80,15 @@ class MemberController extends Controller
             'date' => 'required',
             'from' => 'required',
             'too' => 'required',
-            // 'email' => 'required',
+            'email' => 'required',
         ]);
+        // $mod=new Member;
+        // $mod->name=$request->input('name');
+        // $mod->date=$request->input('date');
+        // $mod->from=$request->input('from');
+        // $mod->too=$request->input('too');
+        // $mod->email=$request->input('email');
+        // $mod->update();
         $member->update($request->all());
         return redirect()->route('members.index')
                         ->with('success','Member updated successfully');

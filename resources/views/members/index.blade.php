@@ -32,6 +32,7 @@
                     <th>From</th>
                     <th>To</th>
                     <th>Involves</th>
+                    <th>email</th>
                     {{--  <th>Created at</th>
                     <th>Updated at</th>  --}}
                     <th width="280px">Action</th>
@@ -44,6 +45,7 @@
                 <td>{{ $member->from}}</td>
                 <td>{{ $member->too}}</td>
                  <td>{{ $member->name}}</td>
+                  <td>{{ $member->email}}</td>
                 {{--  <td>{{ $member->created_at}}</td>
                 <td>{{ $member->updated_at}}</td>  --}}
                 <td>
